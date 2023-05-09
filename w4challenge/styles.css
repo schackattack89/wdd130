@@ -1,0 +1,41 @@
+*{
+    background-color: #ff9ac8;
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+header {
+    color: white;
+    text-align: center;
+}
+p{
+    width: 55%;
+    margin: 0 auto;
+}
+ol {
+    list-style-position: inside; 
+    display: block;
+    width: 45%;
+    margin: 0 auto;
+    padding: 20px;
+    font-weight: bold;
+}
+img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+header h1:hover{
+    color: black;   
+}
+body h1{
+    color: white;
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 10px;
+}
+body p{
+    text-align: center;
+    width: 40%;
+    padding: 50px;
+}
