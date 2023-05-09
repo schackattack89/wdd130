@@ -70,6 +70,7 @@ footer p a:hover{
 }
 footer p{
     font-size: 1.2em;
+    color: white;
 }
 .logo {
     width: 80pt;
@@ -79,4 +80,7 @@ footer p{
 }
 #hero-img{
     width: 100%;
+}
+.social img{
+    width: 50px;
 }
