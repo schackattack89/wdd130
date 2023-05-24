@@ -9,28 +9,39 @@ h1 {
     z-index: 1;
     align-self: center;
     text-align: center;
-    font-size: 12em;
-    white-space: nowrap;
+    font-size: 16vw;
+    word-wrap: normal;
+    border: solid black;
 }
-h2 {
+p {
     grid-column: 2/3;
     grid-row: 2/3;
     z-index: 1;
     color: rgb(134, 14, 14);
     text-align: center;
     align-self: center;
-    font-size: 4vw;
+    font-size: 4.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
-.left {
+#left {
     display: inline;
     grid-column: 1/2;
     grid-row: 1/3;
+    border: solid black;
 
 }
 #sidebar {
     grid-column: 2/3;
     grid-row: 1/3;
     background-color: grey;
+    max-width: 100%;
+}
 
+img {
+    max-width: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    overflow-x: ;
+    overflow-y: ;
 }
