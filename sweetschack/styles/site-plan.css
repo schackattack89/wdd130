@@ -27,6 +27,23 @@ Fonts are separated by a | */
 }
 
 
+.home {
+  display: inline-block;
+  width: 225px;
+  height: 275px;
+}
+.about {
+  display: inline-block;
+  width: 225px;
+  height: 275px;
+}
+.flavors {
+  display: inline-block;
+  width: 225px;
+  height: 275px;
+}
+
+
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
@@ -174,18 +191,3 @@ nav a:hover {
   border-right: 1px solid;
 }
 
-.home {
-  display: inline-block;
-  width: 225px;
-  height: 275px;
-}
-.about {
-  display: inline-block;
-  width: 225px;
-  height: 275px;
-}
-.flavors {
-  display: inline-block;
-  width: 225px;
-  height: 275px;
-}
