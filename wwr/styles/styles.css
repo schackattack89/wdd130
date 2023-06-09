@@ -285,7 +285,7 @@ nav {
 
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, .rivers-grid {
         display: block;
         height: auto;
     }
@@ -307,9 +307,10 @@ nav {
     }
     .home-title {
         font-size: 25px;
-        color: #6f7364;
+        color: #3162cb;
+        text-shadow: black 1px 1px 1px;
     }
-    .rivers-card, .camping-card, .rapids-card, .utah, .idaho, .arizona { 
+    .rivers-card, .camping-card, .rapids-card, #utah, #idaho, #arizona, #salmon, #desolation, #grand, #fork, #gray, #canyon { 
         margin: 50px auto;
         width: 60%;
     }
