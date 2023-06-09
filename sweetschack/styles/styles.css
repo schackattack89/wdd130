@@ -281,7 +281,9 @@ nav {
     footer {
         margin-top: 25px;
     }
-    .sidenav {padding-top: 15px;}
+    .sidenav {
+        width: 100px;
+        padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
             
