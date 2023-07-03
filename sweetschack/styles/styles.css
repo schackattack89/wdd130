@@ -98,7 +98,7 @@ footer a:hover{
     margin-right: 200px;
     text-shadow: #830260 2px 2px 1px;
 }
-h4{
+h4, #proposals, #conclusion{
     color:#eb8509;
     text-shadow: #830260 2px 2px;
     font-size: 1.5em;
@@ -212,7 +212,37 @@ nav {
 .menu {
     float: right;
 }
+.story{
+    margin-top: -275px;
 
+}
+#owners {
+    width: max-content;
+    float: left;
+    padding: 20px
+}
+#cafe {
+    width: max-content;
+    height: 155%;
+    float: right;
+    margin-right: 175px;
+    padding: 20px;
+}
+#proposals{
+    margin-right: 175px;
+    text-align: justify;
+    padding: 15px;
+    font-size: .95em;
+}
+#conclusion{
+    margin-top: 130px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+    margin-right: 175px;
+    font-size: .95em;
+
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -254,5 +284,6 @@ nav {
         width: 100px;
         padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+    .story{margin: auto}
 }
             
