@@ -379,6 +379,11 @@ nav {
         width: 100px;
         padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-    .story{margin: auto}
+    .story{margin: auto;}
+    .flavors{margin:auto;}
+    #endcap1{display: none;}
+    #endcap2{display: none;}
+    #right-side, #left-side, #premium-right, #premium-left{font-size: 2vmax;}
+    .mySlides{margin: auto; height: auto;}
 }
             
