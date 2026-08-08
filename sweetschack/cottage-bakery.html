@@ -172,6 +172,10 @@
 <p>
     Each macaron weighs between 22-25 grams.
 </p>
+
+<h3>Production Date</h3>
+<p>All products for sale today were prepared between <span id="production-date"></span>.</p>
+
         </section>
 
         <section>
@@ -195,6 +199,39 @@
     <footer>
         &copy; 2023 - The Sweet Schack - All Rights Reserved
     </footer>
+<script>
+    function updateProductionDate() {
+        const today = new Date();
 
+        // Find the most recent Friday.
+        const dayOfWeek = today.getDay(); // Sunday = 0, Monday = 1, ..., Friday = 5
+        const daysSinceFriday = (dayOfWeek - 5 + 7) % 7;
+
+        const mostRecentFriday = new Date(today);
+        mostRecentFriday.setDate(today.getDate() - daysSinceFriday);
+
+        // Monday is 4 days before Friday.
+        const monday = new Date(mostRecentFriday);
+        monday.setDate(mostRecentFriday.getDate() - 4);
+
+        // Thursday is 1 day before Friday.
+        const thursday = new Date(mostRecentFriday);
+        thursday.setDate(mostRecentFriday.getDate() - 1);
+
+        const options = {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric'
+        };
+
+        const mondayFormatted = monday.toLocaleDateString('en-US', options);
+        const thursdayFormatted = thursday.toLocaleDateString('en-US', options);
+
+        document.getElementById('production-date').textContent =
+            `${mondayFormatted} and ${thursdayFormatted}`;
+    }
+
+    updateProductionDate();
+</script>
 </body>
 </html>
