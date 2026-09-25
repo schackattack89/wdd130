@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AD5X G-Code</title>
+    <style>
+        body {
+            margin: 0;
+            background: #111;
+            color: #eee;
+            font-family: monospace;
+        }
+
+        pre {
+            white-space: pre;
+            overflow-x: auto;
+            padding: 20px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<pre id="gcode">Loading...</pre>
+
+<script>
+fetch("original_print.gcode")
+    .then(response => response.text())
+    .then(text => {
+        document.getElementById("gcode").textContent = text;
+    })
+    .catch(error => {
+        document.getElementById("gcode").textContent =
+            "Error loading G-code: " + error;
+    });
+</script>
+
+</body>
+</html>
